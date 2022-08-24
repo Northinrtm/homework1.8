@@ -12,5 +12,6 @@ public class Task1 {
         checkYear(2023);
         checkYear(2024);
         checkYear(2025);
+        checkYear(2026);
     }
 }
