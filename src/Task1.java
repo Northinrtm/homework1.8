@@ -1,10 +1,8 @@
 public class Task1 {
-    public static void checkYear(int year) {
-        if (year % 400 == 0)
-            System.out.println(year + " год является високосным.");
-        else if ((year % 4 == 0) && (year % 100 != 0)) {
-            System.out.println(year + " год является високосным.");
-        } else System.out.println(year + " год не является високосным.");
+    private static void checkYear(int year) {
+        if ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0)) {
+            System.out.println(year + " номер года — високосный год.");
+        } else System.out.println(year + " номер года — не високосный год.");
     }
 
     public static void main(String[] args) {
