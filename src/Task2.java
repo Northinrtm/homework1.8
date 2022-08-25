@@ -1,14 +1,13 @@
 import java.time.LocalDate;
 
 public class Task2 {
-    static void checkPhone(int os, int year) {
+    private static void checkPhone(int os, int year) {
+        if (year <= 2015) {
+            System.out.print("Установите облегченную версию приложения ");
+        } else System.out.print("Установите приложение ");
         if (os == 0) {
-            if (year >= 2015) {
-                System.out.println("У вас IOS " + year + " года.");
-            } else System.out.println("Установите облегченную версию приложения для iOS по ссылке.");
-        } else if (year >= 2015) {
-            System.out.println("У вас Android " + year + " года.");
-        } else System.out.println("Установите облегченную версию приложения для Android по ссылке.");
+            System.out.println("для Андройд по ссылке");
+        } else System.out.println("для IOS по ссылке");
     }
 
     public static void main(String[] args) {
